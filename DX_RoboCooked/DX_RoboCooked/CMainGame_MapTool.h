@@ -25,6 +25,8 @@ public:
 
 	void Setup();
 	void Update();
+	void Render();
+	
 	void AddActor(CActor_MapToolTemp*);
 	void DelActor(CActor_MapToolTemp*);
 	void BtnCase(int);

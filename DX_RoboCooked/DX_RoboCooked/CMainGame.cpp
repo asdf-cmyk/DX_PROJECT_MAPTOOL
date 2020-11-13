@@ -61,8 +61,10 @@ void CMainGame::Update()
 
 	// >> :
 	if (m_pMainGame_MapTool)
+		m_pMainGame_MapTool->Update();
+	/*if (m_pMainGame_MapTool)
 		for each(CActor_MapToolTemp* p in m_pMainGame_MapTool->m_vecActor)
-			p->Update();
+			p->Update();*/
 	// << :
 	
 }
@@ -80,8 +82,10 @@ void CMainGame::Render()
 
 	// >> :
 	if (m_pMainGame_MapTool)
+		m_pMainGame_MapTool->Render();
+	/*if (m_pMainGame_MapTool)
 		for each(CActor_MapToolTemp* p in m_pMainGame_MapTool->m_vecActor)
-			p->Render();
+			p->Render();*/
 	// << :
 
 	

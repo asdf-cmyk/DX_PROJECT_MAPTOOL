@@ -50,6 +50,16 @@ void CMainGame_MapTool::Update()
 {
 	//AddActor(m_vecCubePool[0]);
 	//nVecActorIdx = m_vecActor.size();
+	if (m_vecActor.size())
+		for each(CActor_MapToolTemp* p in m_vecActor)
+			p->Update();
+}
+
+void CMainGame_MapTool::Render()
+{
+	if (m_vecActor.size())
+		for each(CActor_MapToolTemp* p in m_vecActor)
+			p->Render();
 }
 
 void CMainGame_MapTool::AddActor(CActor_MapToolTemp* cActor)

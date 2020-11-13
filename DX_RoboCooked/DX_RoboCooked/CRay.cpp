@@ -85,4 +85,5 @@ bool CRay::IsPicked(ST_SPHERE * pSphere)
 
 bool CRay::IsPicked(CActor_MapToolTemp* cActor)
 {
+	return 0;
 }
