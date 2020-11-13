@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{cde3d445-323e-4582-bbf1-cedb0d21aaa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{79040934-30c9-43e3-bd98-bd22f3a7b76f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\EventManager">
+      <UniqueIdentifier>{8b5ebc83-4581-48f8-8150-bebcc9096f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\InputManager">
+      <UniqueIdentifier>{5f9889bb-2507-4a95-8953-79c4a73cd727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MapTool">
+      <UniqueIdentifier>{df810178-9594-4bb0-9d21-afc0b40a404b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX_RoboCooked.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkinnedMesh.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CSingleton.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CDeviceManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CFontManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkinnedMeshManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CAllocateHierachy.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextureManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimeManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrameCounter.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="CRandomGenerator.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CEventManager.h">
+      <Filter>Manager\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CObserver.h">
+      <Filter>Manager\EventManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CPyramid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>Manager\InputManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CGizmo.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="cCubePC.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CActor_MapToolTemp.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainGame_MapTool.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CAddActor_Switch.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="HBtnMacro.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CRay.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DX_RoboCooked.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkinnedMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSingleton.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CDeviceManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CFontManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkinnedMeshManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CAllocateHierachy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CTextureManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CTimeManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CFrameCounter.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="CRandomGenerator.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="CSceneManager.cpp">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CEventManager.cpp">
+      <Filter>Manager\EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CObserver.cpp">
+      <Filter>Manager\EventManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CPyramid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>Manager\InputManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CGizmo.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="cCubePC.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CActor_MapToolTemp.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainGame_MapTool.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CAddActor_Switch.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CRay.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DX_RoboCooked.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="DX_RoboCooked.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
