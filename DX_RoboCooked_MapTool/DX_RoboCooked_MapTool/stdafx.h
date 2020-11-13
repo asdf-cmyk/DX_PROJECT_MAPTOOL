@@ -195,6 +195,8 @@ struct ST_PLAYER_INPUTKEY
 #include "CEventManager.h"
 #include "InputManager.h"
 
+#include "CMapToolWndManager.h"
+
 #ifdef _DEBUG
 	#ifdef UNICODE
 	#pragma comment(linker, "/entry:wWinMainCRTStartup /subsystem:console")

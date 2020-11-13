@@ -143,19 +143,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CActor.h" />
-    <ClInclude Include="CAddActor_Switch.h" />
     <ClInclude Include="CActor_MapToolTemp.h" />
     <ClInclude Include="CAllocateHierachy.h" />
     <ClInclude Include="CBoxCollision.h" />
     <ClInclude Include="CCamera.h" />
     <ClInclude Include="cCubePC.h" />
+    <ClInclude Include="CDebugCube.h" />
+    <ClInclude Include="CDebugSphere.h" />
     <ClInclude Include="CDeviceManager.h" />
     <ClInclude Include="CEventListener.h" />
     <ClInclude Include="CEventManager.h" />
     <ClInclude Include="CField.h" />
     <ClInclude Include="CFontManager.h" />
     <ClInclude Include="CFrameCounter.h" />
+    <ClInclude Include="CGameScene.h" />
     <ClInclude Include="CGrid.h" />
+    <ClInclude Include="CMapToolWndManager.h" />
+    <ClInclude Include="CMapToolWndState.h" />
     <ClInclude Include="CPyramid.h" />
     <ClInclude Include="CRay.h" />
     <ClInclude Include="CScene.h" />
@@ -184,19 +188,23 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CActor.cpp" />
-    <ClCompile Include="CAddActor_Switch.cpp" />
     <ClCompile Include="CActor_MapToolTemp.cpp" />
     <ClCompile Include="CAllocateHierachy.cpp" />
     <ClCompile Include="CBoxCollision.cpp" />
     <ClCompile Include="CCamera.cpp" />
     <ClCompile Include="cCubePC.cpp" />
+    <ClCompile Include="CDebugCube.cpp" />
+    <ClCompile Include="CDebugSphere.cpp" />
     <ClCompile Include="CDeviceManager.cpp" />
     <ClCompile Include="CEventListener.cpp" />
     <ClCompile Include="CEventManager.cpp" />
     <ClCompile Include="CField.cpp" />
     <ClCompile Include="CFontManager.cpp" />
     <ClCompile Include="CFrameCounter.cpp" />
+    <ClCompile Include="CGameScene.cpp" />
     <ClCompile Include="CGrid.cpp" />
+    <ClCompile Include="CMapToolWndManager.cpp" />
+    <ClCompile Include="CMapToolWndState.cpp" />
     <ClCompile Include="CPyramid.cpp" />
     <ClCompile Include="CRay.cpp" />
     <ClCompile Include="CScene.cpp" />

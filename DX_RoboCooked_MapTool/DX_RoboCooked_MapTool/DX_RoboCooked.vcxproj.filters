@@ -123,9 +123,6 @@
     <ClInclude Include="CMainGame_MapTool.h">
       <Filter>MapTool</Filter>
     </ClInclude>
-    <ClInclude Include="CAddActor_Switch.h">
-      <Filter>MapTool</Filter>
-    </ClInclude>
     <ClInclude Include="HBtnMacro.h">
       <Filter>MapTool</Filter>
     </ClInclude>
@@ -154,7 +151,22 @@
       <Filter>Manager\EventManager</Filter>
     </ClInclude>
     <ClInclude Include="CGameScene_MapTool.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CDebugCube.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CDebugSphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapToolWndState.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapToolWndManager.h">
+      <Filter>MapTool</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -236,9 +248,6 @@
     <ClCompile Include="CMainGame_MapTool.cpp">
       <Filter>MapTool</Filter>
     </ClCompile>
-    <ClCompile Include="CAddActor_Switch.cpp">
-      <Filter>MapTool</Filter>
-    </ClCompile>
     <ClCompile Include="CRay.cpp">
       <Filter>MapTool</Filter>
     </ClCompile>
@@ -264,7 +273,22 @@
       <Filter>Manager\EventManager</Filter>
     </ClCompile>
     <ClCompile Include="CGameScene_MapTool.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CDebugCube.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CDebugSphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapToolWndState.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapToolWndManager.cpp">
+      <Filter>MapTool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

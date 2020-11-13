@@ -59,10 +59,15 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DX_ROBOCOOKED));
 
-	/*g_pMainGame = new CMainGame;
-	g_pMainGame->Setup();*/
+	//g_pMainGame = new CMainGame;
+	//g_pMainGame->Setup();
+	
 	g_pCGameScene_MapTool = new CGameScene_MapTool;
-	g_pCGameScene_MapTool->Setup();
+	//g_pCGameScene_MapTool->Setup();
+	
+	//g_pMapToolWndManager->ChangeState(g_pMainGame);
+	g_pMapToolWndManager->ChangeState(g_pCGameScene_MapTool);
+	g_pMapToolWndManager->GetState()->Setup();
 
 	
     MSG msg;
@@ -86,13 +91,20 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		{
 			/*g_pMainGame->Update();
 			g_pMainGame->Render();*/
-			g_pCGameScene_MapTool->Update();
-			g_pCGameScene_MapTool->Render();
+
+			/*g_pCGameScene_MapTool->Update();
+			g_pCGameScene_MapTool->Render();*/
+			
+			g_pMapToolWndManager->GetState()->Update();
+			g_pMapToolWndManager->GetState()->Render();
 		}
 	}
 
-	//SafeDelete(g_pMainGame);
+	SafeDelete(g_pMainGame);
 	SafeDelete(g_pCGameScene_MapTool);
+	g_pFontManager->Destroy();
+	g_pDeviceManager->Destroy();
+	//g_pMapToolWndManager->Destroy();
 
     return (int) msg.wParam;
 }
@@ -288,14 +300,25 @@ LRESULT CALLBACK DXRenderProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam
 		//마우스만 입력받음
 		g_pMainGame->WndProc(hDlg, iMsg, wParam, lParam);
 	}*/
-	if (g_pCGameScene_MapTool)
+	
+	/*if (g_pCGameScene_MapTool)
 	{
 		g_pCGameScene_MapTool->Update();
 		g_pCGameScene_MapTool->Render();
 
 		//마우스만 입력받음
 		g_pCGameScene_MapTool->WndProc(hDlg, iMsg, wParam, lParam);
+	}*/
+
+	if (g_pMapToolWndManager->GetState())
+	{
+		g_pMapToolWndManager->GetState()->Update();
+		g_pMapToolWndManager->GetState()->Render();
+
+		//마우스만 입력받음
+		g_pMapToolWndManager->GetState()->WndProc(hDlg, iMsg, wParam, lParam);
 	}
+	
 	int debugTest;
 	switch (iMsg)
 	{
@@ -318,6 +341,7 @@ LRESULT CALLBACK DXRenderProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam
 LRESULT CALLBACK CtrlToolProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam)
 {
 	HDC hdc;
+	static bool tmp = false;
 	switch (iMsg)
 	{
 	case WM_LBUTTONDOWN:
@@ -325,29 +349,56 @@ LRESULT CALLBACK CtrlToolProc(HWND hDlg, UINT iMsg, WPARAM wParam, LPARAM lParam
 		SetFocus(hDlg);
 		}
 		break;
-		case WM_COMMAND:
+	case WM_RBUTTONDOWN:
 		{
-			int wmId = LOWORD(wParam);
-			switch (wmId)
+		if (tmp)
+		{
+			g_pMapToolWndManager->ChangeState(g_pCGameScene_MapTool);
+
+			if(g_pMainGame)
 			{
-			case IDC_BTN_GRID:
-				//g_pMainGame->BtnTest();
-				g_pCGameScene_MapTool->BtnTest();
-				break;
-			case IDC_BTN_CUBE:
-				//g_pMainGame->BtnCase(IDC_BTN_CUBE);
-				g_pCGameScene_MapTool->BtnCase(IDC_BTN_CUBE);
-				break;
-			case IDM_ABOUT:
-				DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hDlg, About);
-				break;
-			case IDM_EXIT:
-				DestroyWindow(hDlg);
-				break;
-			default:
-				return DefWindowProc(hDlg, iMsg, wParam, lParam);
+				SafeDelete(g_pMainGame);
+				g_pMainGame = NULL;
 			}
 		}
+		else
+		{
+			if (!g_pMainGame)
+			{
+				g_pMainGame = new CMainGame;
+				g_pMapToolWndManager->ChangeState(g_pMainGame);
+				g_pMapToolWndManager->GetState()->Setup();
+			}
+			
+		}
+		tmp = !tmp;
+		}
+		break;
+	case WM_COMMAND:
+	{
+		int wmId = LOWORD(wParam);
+		switch (wmId)
+		{
+		case IDC_BTN_GRID:
+			//g_pMainGame->BtnTest();
+			//g_pCGameScene_MapTool->BtnTest();
+			g_pMapToolWndManager->GetState()->BtnTest();
+			break;
+		case IDC_BTN_CUBE:
+			//g_pMainGame->BtnCase(IDC_BTN_CUBE);
+			//g_pCGameScene_MapTool->BtnCase(IDC_BTN_CUBE);
+			g_pMapToolWndManager->GetState()->BtnCase(IDC_BTN_CUBE);
+			break;
+		case IDM_ABOUT:
+			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hDlg, About);
+			break;
+		case IDM_EXIT:
+			DestroyWindow(hDlg);
+			break;
+		default:
+			return DefWindowProc(hDlg, iMsg, wParam, lParam);
+		}
+	}
 	}
 	return DefWindowProc(hDlg, iMsg, wParam, lParam);
 }

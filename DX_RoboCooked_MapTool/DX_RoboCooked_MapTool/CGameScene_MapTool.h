@@ -1,10 +1,11 @@
 #pragma once
+#include "CMapToolWndState.h"
 
 class CGrid;
 class CCamera;
 
 class CMainGame_MapTool;
-class CGameScene_MapTool
+class CGameScene_MapTool : public CMapToolWndState
 {
 private:
 	CGrid*					m_pGrid;
@@ -30,7 +31,6 @@ public:
 		m_isGridRender = !m_isGridRender;
 	}
 	void BtnCase(int);
-	//CMainGame_MapTool*		m_pMainGame_MapTool;
 	// << :
 };
 

@@ -22,9 +22,12 @@ CMainGame::~CMainGame()
 {
 	SafeDelete(m_pCamera);
 	SafeDelete(m_pGrid);
+	SafeDelete(m_pScene);
+	SafeDelete(m_pDebugCube);
+	SafeDelete(m_pDebugSphere);
 
-	g_pFontManager->Destroy();
-	g_pDeviceManager->Destroy(); 
+	//g_pFontManager->Destroy();
+	//g_pDeviceManager->Destroy(); 
 }
 
 void CMainGame::Setup()

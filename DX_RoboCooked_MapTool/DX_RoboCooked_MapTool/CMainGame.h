@@ -1,4 +1,5 @@
 #pragma once
+#include "CMapToolWndState.h"
 
 
 class CGrid;
@@ -9,7 +10,7 @@ class CScene;
 class CDebugSphere;
 class CDebugCube;
 
-class CMainGame
+class CMainGame : public CMapToolWndState
 {
 private:
 	CGrid*					m_pGrid;
@@ -17,7 +18,6 @@ private:
 	CScene*					m_pScene;
 
 	
-
 	/* µð¹ö±ë¿ë */
 	CDebugSphere*			m_pDebugSphere;
 	CDebugCube*				m_pDebugCube;
@@ -31,6 +31,7 @@ public:
 	void Render();
 	void WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 	
-
+	void BtnTest() {}
+	void BtnCase(int) {}
 };
 
