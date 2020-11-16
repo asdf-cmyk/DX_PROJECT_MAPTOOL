@@ -1,15 +1,3 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (DX_RoboCooked.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  DX_RoboCooked.cpp
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(120): warning C4101: 'wcex2': unreferenced local variable
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(120): warning C4101: 'wcex1': unreferenced local variable
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(207): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(212): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(198): warning C4101: 'DlgRect': unreferenced local variable
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\dx_robocooked.cpp(342): warning C4101: 'hdc': unreferenced local variable
-  CMainGame.cpp
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\cmaingame.cpp(44): warning C4316: 'CDebugSphere': object allocated on the heap may not be aligned 16
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\cmaingame.cpp(48): warning C4316: 'CDebugCube': object allocated on the heap may not be aligned 16
-  Generating Code...
-d:\문서\dx_project_maptool\dx_robocooked_maptool\dx_robocooked_maptool\cmaptoolwndmanager.h(21): warning C4715: 'CMapToolWndManager::GetState': not all control paths return a value
-  DX_RoboCooked.vcxproj -> D:\문서\DX_PROJECT_MAPTOOL\DX_RoboCooked_MapTool\Debug\DX_RoboCooked_MapTool.exe
-  DX_RoboCooked.vcxproj -> D:\문서\DX_PROJECT_MAPTOOL\DX_RoboCooked_MapTool\Debug\DX_RoboCooked_MapTool.pdb (Full PDB)
+  DX_RoboCooked.vcxproj -> C:\Users\Ilm\Documents\DX_PROJECT_MAPTOOL\DX_RoboCooked_MapTool\Debug\DX_RoboCooked_MapTool.exe
+  DX_RoboCooked.vcxproj -> C:\Users\Ilm\Documents\DX_PROJECT_MAPTOOL\DX_RoboCooked_MapTool\Debug\DX_RoboCooked_MapTool.pdb (Full PDB)

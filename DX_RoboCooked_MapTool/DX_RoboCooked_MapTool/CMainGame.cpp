@@ -49,8 +49,11 @@ void CMainGame::Setup()
 	if (m_pDebugCube)
 		m_pDebugCube->Setup();
 
-	m_pScene = new CGameScene;
+	/*m_pScene = new CGameScene;
 	g_SceneManager->AddScene("GAMESCENE",m_pScene);
+	g_SceneManager->SetCurrentScene(m_pScene);*/
+	m_pScene = new CGameScene;
+	g_SceneManager->AddScene("GAMESCENE", m_pScene);
 	g_SceneManager->SetCurrentScene(m_pScene);
 
 	//g_EventManager->CallEvent(EEvent::E_EventTile, NULL);

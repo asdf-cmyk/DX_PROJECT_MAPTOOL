@@ -168,6 +168,9 @@
     <ClInclude Include="CMapToolWndManager.h">
       <Filter>MapTool</Filter>
     </ClInclude>
+    <ClInclude Include="CMapToolScene.h">
+      <Filter>MapTool</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -288,6 +291,9 @@
       <Filter>MapTool</Filter>
     </ClCompile>
     <ClCompile Include="CMapToolWndManager.cpp">
+      <Filter>MapTool</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapToolScene.cpp">
       <Filter>MapTool</Filter>
     </ClCompile>
   </ItemGroup>
